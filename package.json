@@ -16,9 +16,7 @@
     "test": "jest --runInBand",
     "test:coverage": "jest --runInBand --coverage",
     "lint:scripts": "eslint . --ext .ts",
-    "lint:styles": "stylelint ./**/*.{css,scss}",
     "format:scripts": "prettier . --write",
-    "format:styles": "stylelint ./**/*.{css,scss} --fix",
     "format": "npm run format:scripts && npm run format:styles",
     "prepare": "husky install && husky add .husky/pre-commit 'npx lint-staged' && git add .husky/pre-commit"
   },
